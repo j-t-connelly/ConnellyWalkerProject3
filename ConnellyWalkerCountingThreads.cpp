@@ -1,4 +1,5 @@
 #include <iostream>
+#include <thread>
 #include <string>
 #include <mutex> //locks
 #include <condition_variable>
@@ -27,15 +28,20 @@ void f(std::string name, long num) {
 	cv.notify_all();
 	caseCheck.lock();
 	cv.wait(caseCheck, []() {return count == THREAD_COUNT; });
-	lock.lock();
 	std::cout << "Thread " << name << " Exiting." << std::endl;
-	lock.unlock();
+	caseCheck.unlock();
 }
 
-int main(int argc, char* [] argv)
+int main(int argc, char** argv)
 {
-	std::thread a(f, "A", );
-	std::thread b(f, "B", );
-	std::thread c(f, "C", );
-	std::thread d(f, "D", );
+	std::thread a(f, "A", 1000000);
+	std::thread b(f, "B", 2000000);
+	std::thread c(f, "C", 4000000);
+	std::thread d(f, "D", 6000000);
+
+	a.join();
+	b.join();
+	c.join();
+	d.join();
+	// If you do not join at the end, it will try to explode since there is nothing else in main... 
 }

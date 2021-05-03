@@ -13,8 +13,8 @@ void f(std::string name, long num) {
 	lock.lock();
 	std::cout << "Thread " << name << " Started." << std::endl;
 	lock.unlock();
-	unsigned long int sum = 0; //0 - 4,294,967,295 (could also use long long int, but 0-18,446,744,073,709,551,615 seemed like overkill)
-	for (int i = 0; i <= num; i++) {
+	unsigned long long sum = 0; 
+	for (unsigned long long i = 1; i <= num; i++) {
 		lock.lock();
 		sum += i;
 		lock.unlock();
@@ -39,6 +39,7 @@ int main(int argc, char** argv)
 	std::thread c(f, "C", 4000000);
 	std::thread d(f, "D", 6000000);
 
+	//TODO: See if there is a way to do this without calling join()
 	a.join();
 	b.join();
 	c.join();

@@ -1,809 +1,661 @@
-SAMPLE OUTPUT FOR THE FIRST PROBLEM:
-(The numerical values will vary based on what numbers you use, and the order they start and exit will vary.)
-
-A start.
-B start.
-C start.
-D start.
-A done counting. Got 500000500000.
-B done counting. Got 2000001000000.
-C done counting. Got 12500002500000.
-D done counting. Got 40500004500000.
-D exiting.
-C exiting.
-A exiting.
-B exiting.
-
-
-SAMPLE OUTPUT FOR THE SECOND PROBLEM.
-
-**** It's now midnight. ****  
+**** It's now midnight. ****
 
 @@ Server is on break. @@
 Customer #1 enters.  The place is empty.
-Customer #1 seated.
+Customer #1 seated. There is 1 customer in the restaurant.
 @@ Server is back. @@
-Customer #1 leaves.  There are no customers left.
-@@ Server is on break. @@
+Customer #2 enters.  There is 1 customer already here.
+Customer #2 seated. There are 2 customers in the restaurant.
+Customer #3 enters.  There are 2 customers already here.
+Customer #3 seated. There are 3 customers in the restaurant.
 
-**** It's now 1 am. ****  
+**** It's now 1 am. ****
 
-Customer #2 enters.  The place is empty.
-Customer #2 seated.
-@@ Server is back. @@
-Customer #3 enters.  There is 1 customer already here.
-Customer #3 seated.
+Customer #1 leaves.  There are 2 customers now.
+Customer #4 enters.  There are 2 customers already here.
+Customer #4 seated. There are 3 customers in the restaurant.
+Customer #2 leaves.  There are 2 customers now.
 Customer #3 leaves.  There is 1 customer now.
-Customer #2 leaves.  There are no customers left.
+Customer #5 enters.  There is 1 customer already here.
+Customer #5 seated. There are 2 customers in the restaurant.
+
+**** It's now 2 am. ****
+
+Customer #6 enters.  There are 2 customers already here.
+Customer #6 seated. There are 3 customers in the restaurant.
+Customer #5 leaves.  There are 2 customers now.
+Customer #4 leaves.  There is 1 customer now.
+Customer #7 enters.  There is 1 customer already here.
+Customer #6 leaves.  There is 1 customer now.
+Customer #7 seated. There is 1 customer in the restaurant.
+
+**** It's now 3 am. ****
+
+Customer #8 enters.  There is 1 customer already here.
+Customer #8 seated. There are 2 customers in the restaurant.
+Customer #7 leaves.  There is 1 customer now.
+Customer #8 leaves.  There are no customers left.
 @@ Server is on break. @@
 
-**** It's now 2 am. ****  
+**** It's now 4 am. ****
 
-Customer #4 enters.  The place is empty.
-Customer #4 seated.
-@@ Server is back. @@
-Customer #4 leaves.  There are no customers left.
-@@ Server is on break. @@
-
-**** It's now 3 am. ****  
-
-Customer #5 enters.  The place is empty.
-Customer #5 seated.
+Customer #9 enters.  The place is empty.
+Customer #9 seated. There is 1 customer in the restaurant.
 @@ Server is back. @@
 
-**** It's now 4 am. ****  
+**** It's now 5 am. ****
 
-Customer #5 leaves.  There are no customers left.
-@@ Server is on break. @@
-Customer #6 enters.  The place is empty.
-Customer #6 seated.
-@@ Server is back. @@
-
-**** It's now 5 am. ****  
-
-Customer #6 leaves.  There are no customers left.
-@@ Server is on break. @@
-
-**** It's now 6 am. ****  
-
-Customer #7 enters.  The place is empty.
-Customer #7 seated.
-@@ Server is back. @@
-Customer #7 leaves.  There are no customers left.
-@@ Server is on break. @@
-Customer #8 enters.  The place is empty.
-Customer #8 seated.
-@@ Server is back. @@
-Customer #9 enters.  There is 1 customer already here.
-Customer #9 seated.
-Customer #10 enters.  There 2 customers already here.
-Customer #10 seated.
-Customer #11 enters.  There 3 customers already here.
-Customer #11 seated.
-Customer #8 leaves.  There are 3 customers now.
-
-**** It's now 7 am. ****  
-
-Customer #10 leaves.  There are 2 customers now.
-Customer #11 leaves.  There is 1 customer now.
 Customer #9 leaves.  There are no customers left.
 @@ Server is on break. @@
-Customer #12 enters.  The place is empty.
-Customer #12 seated.
+
+**** It's now 6 am. ****
+
+Customer #10 enters.  The place is empty.
+Customer #10 seated. There is 1 customer in the restaurant.
 @@ Server is back. @@
+Customer #11 enters.  There is 1 customer already here.
+Customer #11 seated. There are 2 customers in the restaurant.
+Customer #12 enters.  There are 2 customers already here.
+Customer #12 seated. There are 3 customers in the restaurant.
+Customer #10 leaves.  There are 2 customers now.
+Customer #11 leaves.  There is 1 customer now.
 Customer #13 enters.  There is 1 customer already here.
-Customer #13 seated.
-Customer #14 enters.  There 2 customers already here.
-Customer #14 seated.
+Customer #13 seated. There are 2 customers in the restaurant.
+Customer #14 enters.  There are 2 customers already here.
 
-**** It's now 8 am. ****  
+**** It's now 7 am. ****
 
-Customer #15 enters.  There 3 customers already here.
-Customer #15 seated.
-Customer #16 enters.  There 4 customers already here.
-Customer #13 leaves.  There are 4 customers now.
-Customer #16 seated.
-Customer #12 leaves.  There are 3 customers now.
-Customer #17 enters.  There 3 customers already here.
-Customer #17 seated.
-Customer #18 enters.  There 4 customers already here.
-Customer #18 seated.
-Customer #16 leaves.  There are 4 customers now.
-Customer #19 enters.  There 4 customers already here.
+Customer #14 seated. There are 3 customers in the restaurant.
+Customer #15 enters.  There are 3 customers already here.
+Customer #15 seated. There are 4 customers in the restaurant.
+Customer #13 leaves.  There are 3 customers now.
+Customer #12 leaves.  There are 2 customers now.
+Customer #16 enters.  There are 2 customers already here.
+Customer #16 seated. There are 3 customers in the restaurant.
+Customer #17 enters.  There are 3 customers already here.
+Customer #17 seated. There are 4 customers in the restaurant.
+Customer #18 enters.  There are 4 customers already here.
+Customer #18 seated. There are 5 customers in the restaurant.
 Customer #14 leaves.  There are 4 customers now.
-Customer #19 seated.
-Customer #20 enters.  There 4 customers already here.
-Customer #15 leaves.  There are 4 customers now.
-Customer #20 seated.
-Customer #18 leaves.  There are 3 customers now.
-Customer #21 enters.  There 2 customers already here.
-Customer #22 enters.  There 3 customers already here.
-Customer #17 leaves.  There are 4 customers now.
+Customer #15 leaves.  There are 3 customers now.
 
-**** It's now 9 am. ****  
+**** It's now 8 am. ****
 
-Customer #21 seated.
-Customer #23 enters.  There 4 customers already here.
-Customer #23 seated.
-Customer #24 enters.  There 5 customers already here. I'll wait for a seat.
-Customer #22 seated.
-Customer #25 enters.  There 6 customers already here. I'll wait for a seat.
-Customer #26 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #27 enters.  There 5 customers already here. I'll wait for a seat.
-Customer #28 enters.  There 5 customers already here. I'll wait for a seat.
-Customer #19 leaves.  There are 6 customers now.
-Customer #20 leaves.  There are 6 customers now.
-Customer #24 seated.
-Customer #25 seated.
-Customer #29 enters.  There 5 customers already here. I'll wait for a seat.
-Customer #30 enters.  There 6 customers already here. I'll wait for a seat.
-Customer #21 leaves.  There are 7 customers now.
-Customer #27 seated.
-Customer #31 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #23 leaves.  There are 7 customers now.
-Customer #28 seated.
-Customer #32 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #33 enters.  There 7 customers already here. I'll wait for a seat.
-Customer #34 enters.  There 6 customers already here. I'll wait for a seat.
-Customer #35 enters.  There 6 customers already here. I'll wait for a seat.
-Customer #36 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
+Customer #17 leaves.  There are 2 customers now.
+Customer #19 enters.  There are 2 customers already here.
+Customer #19 seated. There are 3 customers in the restaurant.
+Customer #20 enters.  There are 3 customers already here.
+Customer #20 seated. There are 4 customers in the restaurant.
+Customer #21 enters.  There are 4 customers already here.
+Customer #21 seated. There are 5 customers in the restaurant.
+Customer #16 leaves.  There are 4 customers now.
+Customer #22 enters.  There are 4 customers already here.
+Customer #22 seated. There are 5 customers in the restaurant.
+Customer #18 leaves.  There are 4 customers now.
+Customer #23 enters.  There are 4 customers already here.
+Customer #23 seated. There are 5 customers in the restaurant.
+Customer #21 leaves.  There are 4 customers now.
+Customer #19 leaves.  There are 3 customers now.
+Customer #24 enters.  There are 3 customers already here.
+Customer #24 seated. There are 4 customers in the restaurant.
+Customer #23 leaves.  There are 3 customers now.
+Customer #25 enters.  There are 3 customers already here.
 
-**** It's now 10 am. ****  
+**** It's now 9 am. ****
 
-Customer #37 enters.  There 6 customers already here. I'll wait for a seat.
-Customer #38 enters.  There 6 customers already here. I'll wait for a seat.
-Customer #25 leaves.  There are 7 customers now.
-Customer #29 seated.
-Customer #22 leaves.  There are 7 customers now.
-Customer #30 seated.
-Customer #39 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #24 leaves.  There are 7 customers now.
-Customer #33 seated.
-Customer #40 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #27 leaves.  There are 7 customers now.
-Customer #34 seated.
-Customer #28 leaves.  There are 7 customers now.
-Customer #41 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #35 seated.
-Customer #42 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #43 enters.  There 7 customers already here. I'll wait for a seat.
-Customer #44 enters.  There 5 customers already here. I'll wait for a seat.
-Customer #45 enters.  There 6 customers already here. I'll wait for a seat.
+Customer #20 leaves.  There are 3 customers now.
+Customer #22 leaves.  There are 2 customers now.
+Customer #25 seated. There are 2 customers in the restaurant.
+Customer #26 enters.  There are 2 customers already here.
+Customer #24 leaves.  There are 2 customers now.
+Customer #26 seated. There are 2 customers in the restaurant.
+Customer #27 enters.  There are 2 customers already here.
+Customer #28 enters.  There are 3 customers already here.
+Customer #27 seated. There are 4 customers in the restaurant.
+Customer #29 enters.  There are 4 customers already here.
+Customer #28 seated. There are 5 customers in the restaurant.
+Customer #29 seated. There are 5 customers in the restaurant.
+Customer #30 enters.  There are 5 customers already here. I'll wait for a seat.
+Customer #31 enters.  There are 6 customers already here. I'll wait for a seat.
+Customer #32 enters.  There are 7 customers already here. TOO BUSY! I'm leaving!
+Customer #33 enters.  There are 7 customers already here. TOO BUSY! I'm leaving!
+Customer #34 enters.  There are 7 customers already here. TOO BUSY! I'm leaving!
+Customer #26 leaves.  There are 6 customers now.
+Customer #30 seated. There are 6 customers in the restaurant.
+Customer #35 enters.  There are 6 customers already here. I'll wait for a seat.
 Customer #29 leaves.  There are 6 customers now.
-Customer #37 seated.
-Customer #34 leaves.  There are 6 customers now.
-Customer #38 seated.
-Customer #33 leaves.  There are 6 customers now.
-Customer #43 seated.
-Customer #46 enters.  There 6 customers already here. I'll wait for a seat.
-Customer #47 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #30 leaves.  There are 6 customers now.
-Customer #44 seated.
+Customer #36 enters.  There are 6 customers already here. I'll wait for a seat.
+Customer #37 enters.  There are 7 customers already here. TOO BUSY! I'm leaving!
 
-**** It's now 11 am. ****  
+**** It's now 10 am. ****
 
-Customer #48 enters.  There 5 customers already here. I'll wait for a seat.
-Customer #49 enters.  There 6 customers already here. I'll wait for a seat.
-Customer #35 leaves.  There are 7 customers now.
-Customer #45 seated.
-Customer #37 leaves.  There are 7 customers now.
-Customer #46 seated.
-Customer #50 enters.  There 7 customers already here. I'll wait for a seat.
-Customer #38 leaves.  There are 7 customers now.
-Customer #48 seated.
-Customer #51 enters.  There 6 customers already here. I'll wait for a seat.
-Customer #43 leaves.  There are 7 customers now.
-Customer #49 seated.
-Customer #52 enters.  There 6 customers already here. I'll wait for a seat.
-Customer #46 leaves.  There are 7 customers now.
-Customer #50 seated.
-Customer #53 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #48 leaves.  There are 6 customers now.
-Customer #51 seated.
-Customer #54 enters.  There 6 customers already here. I'll wait for a seat.
-Customer #44 leaves.  There are 6 customers now.
-Customer #52 seated.
+Customer #38 enters.  There are 7 customers already here. TOO BUSY! I'm leaving!
+Customer #25 leaves.  There are 6 customers now.
+Customer #35 seated. There are 6 customers in the restaurant.
+Customer #31 seated. There are 6 customers in the restaurant.
+Customer #39 enters.  There are 6 customers already here. I'll wait for a seat.
+Customer #39 seated. There are 7 customers in the restaurant.
+Customer #27 leaves.  There are 6 customers now.
+Customer #40 enters.  There are 6 customers already here. I'll wait for a seat.
+Customer #28 leaves.  There are 6 customers now.
+Customer #30 leaves.  There are 5 customers now.
+Customer #36 seated. There are 5 customers in the restaurant.
+Customer #40 seated. There are 5 customers in the restaurant.
+Customer #41 enters.  There are 5 customers already here. I'll wait for a seat.
+Customer #42 enters.  There are 6 customers already here. I'll wait for a seat.
+Customer #43 enters.  There are 7 customers already here. TOO BUSY! I'm leaving!
+Customer #44 enters.  There are 7 customers already here. TOO BUSY! I'm leaving!
+Customer #39 leaves.  There are 6 customers now.
+Customer #41 seated. There are 6 customers in the restaurant.
+Customer #35 leaves.  There are 5 customers now.
+Customer #42 seated. There are 5 customers in the restaurant.
+Customer #31 leaves.  There are 4 customers now.
+Customer #36 leaves.  There are 3 customers now.
+Customer #45 enters.  There are 3 customers already here.
 
-**** It's now noon. ****  
+**** It's now 11 am. ****
 
+Customer #45 seated. There are 4 customers in the restaurant.
+Customer #46 enters.  There are 4 customers already here.
+Customer #46 seated. There are 5 customers in the restaurant.
+Customer #47 enters.  There are 5 customers already here. I'll wait for a seat.
+Customer #40 leaves.  There are 5 customers now.
+Customer #47 seated. There are 5 customers in the restaurant.
+Customer #48 enters.  There are 5 customers already here. I'll wait for a seat.
+Customer #49 enters.  There are 6 customers already here. I'll wait for a seat.
+Customer #42 leaves.  There are 6 customers now.
+Customer #48 seated. There are 6 customers in the restaurant.
+Customer #41 leaves.  There are 5 customers now.
+Customer #49 seated. There are 5 customers in the restaurant.
+Customer #47 leaves.  There are 4 customers now.
+Customer #46 leaves.  There are 3 customers now.
+Customer #50 enters.  There are 3 customers already here.
+Customer #50 seated. There are 4 customers in the restaurant.
+Customer #51 enters.  There are 4 customers already here.
 Customer #45 leaves.  There are 4 customers now.
-Customer #54 seated.
-Customer #55 enters.  There 4 customers already here.
-Customer #49 leaves.  There are 5 customers now.
-Customer #55 seated.
-Customer #50 leaves.  There are 4 customers now.
-Customer #56 enters.  There 4 customers already here.
-Customer #56 seated.
-Customer #52 leaves.  There are 4 customers now.
-Customer #57 enters.  There 4 customers already here.
-Customer #58 enters.  There 5 customers already here. I'll wait for a seat.
-Customer #57 seated.
-Customer #54 leaves.  There are 5 customers now.
-Customer #58 seated.
-Customer #51 leaves.  There are 4 customers now.
-Customer #55 leaves.  There are 3 customers now.
-Customer #59 enters.  There 3 customers already here.
-Customer #59 seated.
-Customer #56 leaves.  There are 3 customers now.
+Customer #51 seated. There are 4 customers in the restaurant.
 
-**** It's now 1 pm. ****  
+**** It's now noon. ****
 
-Customer #60 enters.  There 3 customers already here.
-Customer #59 leaves.  There are 3 customers now.
-Customer #60 seated.
-Customer #61 enters.  There 3 customers already here.
-Customer #61 seated.
-Customer #57 leaves.  There are 3 customers now.
+Customer #48 leaves.  There are 3 customers now.
+Customer #52 enters.  There are 3 customers already here.
+Customer #49 leaves.  There are 3 customers now.
+Customer #52 seated. There are 3 customers in the restaurant.
+Customer #50 leaves.  There are 2 customers now.
+Customer #53 enters.  There are 2 customers already here.
+Customer #53 seated. There are 3 customers in the restaurant.
+Customer #51 leaves.  There are 2 customers now.
+Customer #54 enters.  There are 2 customers already here.
+Customer #54 seated. There are 3 customers in the restaurant.
+Customer #52 leaves.  There are 2 customers now.
+Customer #55 enters.  There are 2 customers already here.
+Customer #55 seated. There are 3 customers in the restaurant.
+
+**** It's now 1 pm. ****
+
+Customer #56 enters.  There are 3 customers already here.
+Customer #56 seated. There are 4 customers in the restaurant.
+Customer #53 leaves.  There are 3 customers now.
+Customer #55 leaves.  There are 2 customers now.
+Customer #56 leaves.  There is 1 customer now.
+Customer #54 leaves.  There are no customers left.
+@@ Server is on break. @@
+Customer #57 enters.  The place is empty.
+Customer #57 seated. There is 1 customer in the restaurant.
+@@ Server is back. @@
+Customer #58 enters.  There is 1 customer already here.
+Customer #58 seated. There are 2 customers in the restaurant.
+Customer #57 leaves.  There is 1 customer now.
+
+**** It's now 2 pm. ****
+
+Customer #59 enters.  There is 1 customer already here.
+Customer #59 seated. There are 2 customers in the restaurant.
+Customer #60 enters.  There are 2 customers already here.
+Customer #60 seated. There are 3 customers in the restaurant.
 Customer #58 leaves.  There are 2 customers now.
-Customer #61 leaves.  There is 1 customer now.
-Customer #62 enters.  There is 1 customer already here.
-Customer #62 seated.
-Customer #60 leaves.  There is 1 customer now.
-Customer #63 enters.  There is 1 customer already here.
-Customer #63 seated.
+Customer #61 enters.  There are 2 customers already here.
+Customer #61 seated. There are 3 customers in the restaurant.
+Customer #61 leaves.  There are 2 customers now.
 
-**** It's now 2 pm. ****  
+**** It's now 3 pm. ****
 
-Customer #62 leaves.  There is 1 customer now.
+Customer #59 leaves.  There is 1 customer now.
+Customer #60 leaves.  There are no customers left.
+@@ Server is on break. @@
+Customer #62 enters.  The place is empty.
+Customer #62 seated. There is 1 customer in the restaurant.
+@@ Server is back. @@
+Customer #62 leaves.  There are no customers left.
+@@ Server is on break. @@
+Customer #63 enters.  The place is empty.
+Customer #63 seated. There is 1 customer in the restaurant.
+@@ Server is back. @@
 Customer #64 enters.  There is 1 customer already here.
-Customer #64 seated.
-Customer #63 leaves.  There is 1 customer now.
-Customer #65 enters.  There is 1 customer already here.
-Customer #65 seated.
-Customer #66 enters.  There 2 customers already here.
-Customer #66 seated.
+Customer #64 seated. There are 2 customers in the restaurant.
+Customer #65 enters.  There are 2 customers already here.
+Customer #63 leaves.  There are 2 customers now.
+Customer #65 seated. There are 2 customers in the restaurant.
 
-**** It's now 3 pm. ****  
+**** It's now 4 pm. ****
 
-Customer #65 leaves.  There are 2 customers now.
-Customer #64 leaves.  There is 1 customer now.
-Customer #66 leaves.  There are no customers left.
-@@ Server is on break. @@
-Customer #67 enters.  The place is empty.
-Customer #67 seated.
-@@ Server is back. @@
-Customer #68 enters.  There is 1 customer already here.
-Customer #68 seated.
-Customer #69 enters.  There 2 customers already here.
-Customer #69 seated.
+Customer #66 enters.  There are 2 customers already here.
+Customer #66 seated. There are 3 customers in the restaurant.
+Customer #67 enters.  There are 3 customers already here.
+Customer #67 seated. There are 4 customers in the restaurant.
+Customer #64 leaves.  There are 3 customers now.
+Customer #68 enters.  There are 3 customers already here.
+Customer #68 seated. There are 4 customers in the restaurant.
+Customer #66 leaves.  There are 3 customers now.
+Customer #69 enters.  There are 3 customers already here.
+Customer #69 seated. There are 4 customers in the restaurant.
+Customer #70 enters.  There are 4 customers already here.
+Customer #70 seated. There are 5 customers in the restaurant.
+Customer #65 leaves.  There are 4 customers now.
+Customer #71 enters.  There are 4 customers already here.
+Customer #71 seated. There are 5 customers in the restaurant.
+Customer #67 leaves.  There are 4 customers now.
+Customer #72 enters.  There are 4 customers already here.
+Customer #72 seated. There are 5 customers in the restaurant.
 
-**** It's now 4 pm. ****  
+**** It's now 5 pm. ****
 
-Customer #68 leaves.  There are 2 customers now.
-Customer #67 leaves.  There is 1 customer now.
-Customer #69 leaves.  There are no customers left.
-@@ Server is on break. @@
-Customer #70 enters.  The place is empty.
-Customer #70 seated.
-@@ Server is back. @@
-Customer #71 enters.  There is 1 customer already here.
-Customer #72 enters.  There 2 customers already here.
-Customer #71 seated.
-Customer #72 seated.
-Customer #73 enters.  There 3 customers already here.
-Customer #73 seated.
-Customer #74 enters.  There 4 customers already here.
-Customer #74 seated.
-Customer #75 enters.  There 5 customers already here. I'll wait for a seat.
-Customer #76 enters.  There 6 customers already here. I'll wait for a seat.
-
-**** It's now 5 pm. ****  
-
-Customer #77 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #78 enters.  There 7 customers already here. I'll wait for a seat.
-Customer #70 leaves.  There are 7 customers now.
-Customer #75 seated.
-Customer #79 enters.  There 6 customers already here. I'll wait for a seat.
-Customer #72 leaves.  There are 7 customers now.
-Customer #76 seated.
-Customer #80 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #81 enters.  There 7 customers already here. I'll wait for a seat.
-Customer #82 enters.  There 7 customers already here. I'll wait for a seat.
-Customer #83 enters.  There 7 customers already here. I'll wait for a seat.
-Customer #84 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
+Customer #69 leaves.  There are 4 customers now.
+Customer #73 enters.  There are 4 customers already here.
+Customer #74 enters.  There are 5 customers already here. I'll wait for a seat.
+Customer #73 seated. There are 6 customers in the restaurant.
+Customer #75 enters.  There are 6 customers already here. I'll wait for a seat.
+Customer #70 leaves.  There are 6 customers now.
+Customer #76 enters.  There are 6 customers already here. I'll wait for a seat.
+Customer #68 leaves.  There are 6 customers now.
+Customer #74 seated. There are 6 customers in the restaurant.
+Customer #75 seated. There are 6 customers in the restaurant.
+Customer #78 enters.  There are 6 customers already here. I'll wait for a seat.
+Customer #77 enters.  There are 7 customers already here. TOO BUSY! I'm leaving!
+Customer #80 enters.  There are 7 customers already here. TOO BUSY! I'm leaving!
 Customer #71 leaves.  There are 6 customers now.
-Customer #78 seated.
-Customer #75 leaves.  There are 6 customers now.
-Customer #85 enters.  There 6 customers already here. I'll wait for a seat.
-Customer #79 seated.
-Customer #86 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #74 leaves.  There are 7 customers now.
-Customer #81 seated.
+Customer #76 seated. There are 6 customers in the restaurant.
+Customer #81 enters.  There are 6 customers already here. I'll wait for a seat.
+Customer #81 seated. There are 7 customers in the restaurant.
+Customer #78 seated. There are 7 customers in the restaurant.
+Customer #82 enters.  There are 7 customers already here. TOO BUSY! I'm leaving!
 Customer #73 leaves.  There are 6 customers now.
-Customer #87 enters.  There 6 customers already here. I'll wait for a seat.
-Customer #82 seated.
-Customer #88 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #89 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #90 enters.  There 7 customers already here. I'll wait for a seat.
-Customer #91 enters.  There 6 customers already here. I'll wait for a seat.
-Customer #92 enters.  There 6 customers already here. I'll wait for a seat.
-Customer #93 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #76 leaves.  There are 7 customers now.
-Customer #83 seated.
-Customer #94 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #95 enters.  There 6 customers already here. I'll wait for a seat.
+Customer #83 enters.  There are 6 customers already here. I'll wait for a seat.
+Customer #83 seated. There are 7 customers in the restaurant.
+Customer #75 leaves.  There are 6 customers now.
 
-**** It's now 6 pm. ****  
+**** It's now 6 pm. ****
 
-Customer #96 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #97 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #98 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #99 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #100 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #78 leaves.  There are 7 customers now.
-Customer #85 seated.
-Customer #79 leaves.  There are 7 customers now.
-Customer #87 seated.
-Customer #81 leaves.  There are 7 customers now.
-Customer #90 seated.
-Customer #101 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #102 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #103 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #104 enters.  There 7 customers already here. I'll wait for a seat.
-Customer #105 enters.  There 6 customers already here. I'll wait for a seat.
-Customer #82 leaves.  There are 7 customers now.
-Customer #91 seated.
-Customer #106 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #107 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #108 enters.  There 6 customers already here. I'll wait for a seat.
-Customer #109 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #110 enters.  There 7 customers already here. I'll wait for a seat.
-Customer #111 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #112 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #113 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #114 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #115 enters.  There 7 customers already here. I'll wait for a seat.
-Customer #116 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #117 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #83 leaves.  There are 7 customers now.
-Customer #92 seated.
-Customer #118 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #90 leaves.  There are 7 customers now.
-Customer #95 seated.
-Customer #119 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #120 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
+Customer #79 enters.  There are 6 customers already here. I'll wait for a seat.
+Customer #72 leaves.  There are 5 customers now.
+Customer #86 enters.  There are 5 customers already here. I'll wait for a seat.
+Customer #87 enters.  There are 6 customers already here. I'll wait for a seat.
+Customer #88 enters.  There are 7 customers already here. TOO BUSY! I'm leaving!
+Customer #90 enters.  There are 7 customers already here. TOO BUSY! I'm leaving!
+Customer #91 enters.  There are 7 customers already here. TOO BUSY! I'm leaving!
+Customer #84 enters.  There are 7 customers already here. TOO BUSY! I'm leaving!
+Customer #85 enters.  There are 7 customers already here. TOO BUSY! I'm leaving!
+Customer #92 enters.  There are 7 customers already here. TOO BUSY! I'm leaving!
+Customer #76 leaves.  There are 6 customers now.
+Customer #93 enters.  There are 6 customers already here. I'll wait for a seat.
+Customer #93 seated. There are 7 customers in the restaurant.
+Customer #95 enters.  There are 7 customers already here. TOO BUSY! I'm leaving!
+Customer #74 leaves.  There are 6 customers now.
+Customer #86 seated. There are 6 customers in the restaurant.
+Customer #96 enters.  There are 6 customers already here. I'll wait for a seat.
+Customer #89 enters.  There are 7 customers already here. TOO BUSY! I'm leaving!
+Customer #97 enters.  There are 7 customers already here. TOO BUSY! I'm leaving!
+Customer #98 enters.  There are 7 customers already here. TOO BUSY! I'm leaving!
+Customer #81 leaves.  There are 6 customers now.
+Customer #78 leaves.  There are 5 customers now.
 
-**** It's now 7 pm. ****  
+**** It's now 7 pm. ****
 
-Customer #121 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #85 leaves.  There are 7 customers now.
-Customer #104 seated.
-Customer #122 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #87 leaves.  There are 7 customers now.
-Customer #105 seated.
-Customer #123 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #124 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #91 leaves.  There are 6 customers now.
-Customer #108 seated.
-Customer #125 enters.  There 5 customers already here. I'll wait for a seat.
-Customer #126 enters.  There 6 customers already here. I'll wait for a seat.
-Customer #127 enters.  There 6 customers already here. I'll wait for a seat.
-Customer #95 leaves.  There are 7 customers now.
-Customer #110 seated.
-Customer #104 leaves.  There are 7 customers now.
-Customer #115 seated.
-Customer #128 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #92 leaves.  There are 7 customers now.
-Customer #125 seated.
-Customer #129 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #130 enters.  There 6 customers already here. I'll wait for a seat.
+Customer #99 enters.  There are 5 customers already here. I'll wait for a seat.
+Customer #100 enters.  There are 6 customers already here. I'll wait for a seat.
+Customer #94 enters.  There are 7 customers already here. TOO BUSY! I'm leaving!
+Customer #87 seated. There are 12 customers in the restaurant.
+Customer #99 seated. There are 15 customers in the restaurant.
+Customer #96 seated. There are 15 customers in the restaurant.
+Customer #83 leaves.  There are 20 customers now.
+Customer #93 leaves.  There are 20 customers now.
+Customer #100 seated. There are 20 customers in the restaurant.
+Customer #86 leaves.  There are 19 customers now.
+Customer #79 seated. There are 19 customers in the restaurant.
+Customer #87 leaves.  There are 18 customers now.
+Customer #103 seated. There are 18 customers in the restaurant.
+Customer #99 leaves.  There are 19 customers now.
 
-**** It's now 8 pm. ****  
+**** It's now 8 pm. ****
 
-Customer #105 leaves.  There are 6 customers now.
-Customer #126 seated.
-Customer #125 leaves.  There are 5 customers now.
-Customer #127 seated.
-Customer #131 enters.  There 5 customers already here. I'll wait for a seat.
-Customer #108 leaves.  There are 6 customers now.
-Customer #130 seated.
-Customer #115 leaves.  There are 5 customers now.
-Customer #131 seated.
-Customer #132 enters.  There 5 customers already here. I'll wait for a seat.
-Customer #133 enters.  There 6 customers already here. I'll wait for a seat.
-Customer #110 leaves.  There are 6 customers now.
-Customer #132 seated.
-Customer #127 leaves.  There are 5 customers now.
-Customer #133 seated.
+Customer #104 seated. There are 19 customers in the restaurant.
+Customer #100 leaves.  There are 18 customers now.
+Customer #105 seated. There are 18 customers in the restaurant.
+Customer #96 leaves.  There are 18 customers now.
+Customer #106 seated. There are 18 customers in the restaurant.
+Customer #79 leaves.  There are 18 customers now.
+Customer #109 seated. There are 18 customers in the restaurant.
+Customer #103 leaves.  There are 17 customers now.
+Customer #110 seated. There are 17 customers in the restaurant.
+Customer #104 leaves.  There are 16 customers now.
+Customer #101 seated. There are 16 customers in the restaurant.
+Customer #109 leaves.  There are 15 customers now.
+Customer #107 seated. There are 15 customers in the restaurant.
+Customer #106 leaves.  There are 14 customers now.
+Customer #108 seated. There are 14 customers in the restaurant.
+Customer #105 leaves.  There are 14 customers now.
+Customer #111 seated. There are 14 customers in the restaurant.
+
+**** It's now 9 pm. ****
+
+Customer #110 leaves.  There are 13 customers now.
+Customer #113 seated. There are 13 customers in the restaurant.
+Customer #101 leaves.  There are 14 customers now.
+Customer #102 seated. There are 14 customers in the restaurant.
+Customer #108 leaves.  There are 13 customers now.
+Customer #112 seated. There are 13 customers in the restaurant.
+Customer #107 leaves.  There are 12 customers now.
+Customer #114 seated. There are 12 customers in the restaurant.
+Customer #111 leaves.  There are 11 customers now.
+Customer #115 seated. There are 11 customers in the restaurant.
+Customer #112 leaves.  There are 11 customers now.
+
+**** It's now 10 pm. ****
+
+Customer #116 seated. There are 11 customers in the restaurant.
+Customer #113 leaves.  There are 10 customers now.
+Customer #117 seated. There are 10 customers in the restaurant.
+Customer #115 leaves.  There are 10 customers now.
+Customer #102 leaves.  There are 9 customers now.
+Customer #119 seated. There are 9 customers in the restaurant.
+Customer #118 seated. There are 9 customers in the restaurant.
+Customer #114 leaves.  There are 8 customers now.
+Customer #120 seated. There are 8 customers in the restaurant.
+Customer #118 leaves.  There are 8 customers now.
+Customer #117 leaves.  There are 7 customers now.
+Customer #121 seated. There are 7 customers in the restaurant.
+Customer #122 seated. There are 7 customers in the restaurant.
+Customer #120 leaves.  There are 6 customers now.
+Customer #123 seated. There are 6 customers in the restaurant.
+Customer #116 leaves.  There are 5 customers now.
+Customer #124 seated. There are 5 customers in the restaurant.
+Customer #125 enters.  There are 5 customers already here. I'll wait for a seat.
+
+**** It's now 11 pm. ****
+
+Customer #123 leaves.  There are 5 customers now.
+Customer #125 seated. There are 5 customers in the restaurant.
+Customer #119 leaves.  There are 4 customers now.
+Customer #126 enters.  There are 4 customers already here.
+Customer #126 seated. There are 5 customers in the restaurant.
+Customer #124 leaves.  There are 4 customers now.
+Customer #127 enters.  There are 4 customers already here.
+Customer #127 seated. There are 5 customers in the restaurant.
+Customer #121 leaves.  There are 4 customers now.
+Customer #128 enters.  There are 4 customers already here.
+Customer #128 seated. There are 5 customers in the restaurant.
 Customer #126 leaves.  There are 4 customers now.
-Customer #134 enters.  There 4 customers already here.
-Customer #134 seated.
-Customer #131 leaves.  There are 4 customers now.
-Customer #135 enters.  There 4 customers already here.
-Customer #135 seated.
+Customer #122 leaves.  There are 3 customers now.
+Customer #125 leaves.  There are 2 customers now.
+Customer #128 leaves.  There is 1 customer now.
 
-**** It's now 9 pm. ****  
+**** It's now midnight. ****
 
-Customer #136 enters.  There 5 customers already here. I'll wait for a seat.
-Customer #130 leaves.  There are 5 customers now.
-Customer #136 seated.
-Customer #133 leaves.  There are 4 customers now.
+Customer #127 leaves.  There are no customers left.
+@@ Server is on break. @@
+Customer #129 enters.  The place is empty.
+Customer #129 seated. There is 1 customer in the restaurant.
+@@ Server is back. @@
+Customer #130 enters.  There is 1 customer already here.
+Customer #130 seated. There are 2 customers in the restaurant.
+
+**** It's now 1 am. ****
+
+Customer #131 enters.  There are 2 customers already here.
+Customer #131 seated. There are 3 customers in the restaurant.
+Customer #131 leaves.  There are 2 customers now.
+Customer #129 leaves.  There is 1 customer now.
+Customer #130 leaves.  There are no customers left.
+@@ Server is on break. @@
+Customer #132 enters.  The place is empty.
+Customer #132 seated. There is 1 customer in the restaurant.
+@@ Server is back. @@
+
+**** It's now 2 am. ****
+
+Customer #133 enters.  There is 1 customer already here.
+Customer #133 seated. There are 2 customers in the restaurant.
+Customer #134 enters.  There are 2 customers already here.
+Customer #134 seated. There are 3 customers in the restaurant.
+Customer #135 enters.  There are 3 customers already here.
+Customer #135 seated. There are 4 customers in the restaurant.
 Customer #132 leaves.  There are 3 customers now.
-Customer #137 enters.  There 3 customers already here.
-Customer #137 seated.
-Customer #136 leaves.  There are 3 customers now.
-Customer #134 leaves.  There are 2 customers now.
+Customer #133 leaves.  There are 2 customers now.
 Customer #135 leaves.  There is 1 customer now.
 
-**** It's now 10 pm. ****  
+**** It's now 3 am. ****
 
-Customer #138 enters.  There is 1 customer already here.
-Customer #138 seated.
-Customer #139 enters.  There 2 customers already here.
-Customer #137 leaves.  There are 2 customers now.
-Customer #139 seated.
-Customer #140 enters.  There 2 customers already here.
-Customer #140 seated.
-Customer #141 enters.  There 3 customers already here.
-Customer #141 seated.
+Customer #134 leaves.  There are no customers left.
+@@ Server is on break. @@
+Customer #136 enters.  The place is empty.
+Customer #136 seated. There is 1 customer in the restaurant.
+@@ Server is back. @@
+Customer #137 enters.  There is 1 customer already here.
+Customer #137 seated. There are 2 customers in the restaurant.
+Customer #136 leaves.  There is 1 customer now.
 
-**** It's now 11 pm. ****  
+**** It's now 4 am. ****
 
-Customer #139 leaves.  There are 3 customers now.
-Customer #138 leaves.  There are 2 customers now.
-Customer #140 leaves.  There is 1 customer now.
+Customer #137 leaves.  There are no customers left.
+@@ Server is on break. @@
+
+**** It's now 5 am. ****
+
+Customer #138 enters.  The place is empty.
+Customer #138 seated. There is 1 customer in the restaurant.
+@@ Server is back. @@
+
+**** It's now 6 am. ****
+
+Customer #138 leaves.  There are no customers left.
+@@ Server is on break. @@
+Customer #139 enters.  The place is empty.
+Customer #139 seated. There is 1 customer in the restaurant.
+@@ Server is back. @@
+Customer #140 enters.  There is 1 customer already here.
+Customer #140 seated. There are 2 customers in the restaurant.
+Customer #141 enters.  There are 2 customers already here.
+Customer #141 seated. There are 3 customers in the restaurant.
+Customer #140 leaves.  There are 2 customers now.
+Customer #141 leaves.  There is 1 customer now.
 Customer #142 enters.  There is 1 customer already here.
-Customer #142 seated.
-Customer #143 enters.  There 2 customers already here.
-Customer #143 seated.
-Customer #141 leaves.  There are 2 customers now.
-Customer #142 leaves.  There is 1 customer now.
-Customer #143 leaves.  There are no customers left.
-@@ Server is on break. @@
+Customer #142 seated. There are 2 customers in the restaurant.
+Customer #139 leaves.  There is 1 customer now.
 
-**** It's now midnight. ****  
+**** It's now 7 am. ****
 
-Customer #144 enters.  The place is empty.
-Customer #144 seated.
-@@ Server is back. @@
-Customer #144 leaves.  There are no customers left.
-@@ Server is on break. @@
-Customer #145 enters.  The place is empty.
-Customer #145 seated.
-@@ Server is back. @@
+Customer #143 enters.  There is 1 customer already here.
+Customer #143 seated. There are 2 customers in the restaurant.
+Customer #144 enters.  There are 2 customers already here.
+Customer #144 seated. There are 3 customers in the restaurant.
+Customer #145 enters.  There are 3 customers already here.
+Customer #145 seated. There are 4 customers in the restaurant.
+Customer #142 leaves.  There are 3 customers now.
+Customer #146 enters.  There are 3 customers already here.
+Customer #146 seated. There are 4 customers in the restaurant.
+Customer #147 enters.  There are 4 customers already here.
+Customer #147 seated. There are 5 customers in the restaurant.
+Customer #148 enters.  There are 5 customers already here. I'll wait for a seat.
+Customer #145 leaves.  There are 5 customers now.
+Customer #148 seated. There are 5 customers in the restaurant.
+Customer #149 enters.  There are 5 customers already here. I'll wait for a seat.
+Customer #150 enters.  There are 6 customers already here. I'll wait for a seat.
 
-**** It's now 1 am. ****  
+**** It's now 8 am. ****
 
-Customer #146 enters.  There is 1 customer already here.
-Customer #145 leaves.  There is 1 customer now.
-@@ Server is on break. @@
-Customer #146 seated.
-@@ Server is back. @@
-Customer #147 enters.  There is 1 customer already here.
-Customer #147 seated.
-Customer #148 enters.  There 2 customers already here.
-Customer #148 seated.
-Customer #149 enters.  There 3 customers already here.
-Customer #146 leaves.  There are 3 customers now.
-Customer #149 seated.
+Customer #147 leaves.  There are 6 customers now.
+Customer #149 seated. There are 6 customers in the restaurant.
+Customer #143 leaves.  There are 5 customers now.
+Customer #150 seated. There are 5 customers in the restaurant.
+Customer #144 leaves.  There are 4 customers now.
+Customer #151 enters.  There are 4 customers already here.
+Customer #151 seated. There are 5 customers in the restaurant.
+Customer #152 enters.  There are 5 customers already here. I'll wait for a seat.
+Customer #146 leaves.  There are 5 customers now.
+Customer #149 leaves.  There are 4 customers now.
+Customer #152 seated. There are 4 customers in the restaurant.
+Customer #153 enters.  There are 4 customers already here.
+Customer #148 leaves.  There are 4 customers now.
+Customer #153 seated. There are 4 customers in the restaurant.
+Customer #154 enters.  There are 4 customers already here.
+Customer #155 enters.  There are 5 customers already here. I'll wait for a seat.
+Customer #154 seated. There are 6 customers in the restaurant.
+Customer #156 enters.  There are 6 customers already here. I'll wait for a seat.
+Customer #157 enters.  There are 7 customers already here. TOO BUSY! I'm leaving!
+Customer #150 leaves.  There are 6 customers now.
+Customer #155 seated. There are 6 customers in the restaurant.
 
-**** It's now 2 am. ****  
+**** It's now 9 am. ****
 
-Customer #148 leaves.  There are 2 customers now.
-Customer #150 enters.  There 2 customers already here.
-Customer #150 seated.
-Customer #147 leaves.  There are 2 customers now.
-Customer #149 leaves.  There is 1 customer now.
-Customer #150 leaves.  There are no customers left.
-@@ Server is on break. @@
+Customer #152 leaves.  There are 5 customers now.
+Customer #158 enters.  There are 5 customers already here. I'll wait for a seat.
+Customer #158 seated. There are 6 customers in the restaurant.
+Customer #154 leaves.  There are 5 customers now.
+Customer #153 leaves.  There are 4 customers now.
+Customer #160 enters.  There are 4 customers already here.
+Customer #160 seated. There are 5 customers in the restaurant.
+Customer #151 leaves.  There are 4 customers now.
+Customer #161 enters.  There are 4 customers already here.
+Customer #161 seated. There are 5 customers in the restaurant.
+Customer #155 leaves.  There are 4 customers now.
+Customer #162 enters.  There are 4 customers already here.
+Customer #156 seated. There are 5 customers in the restaurant.
+Customer #163 enters.  There are 5 customers already here. I'll wait for a seat.
+Customer #164 enters.  There are 6 customers already here. I'll wait for a seat.
+Customer #162 seated. There are 7 customers in the restaurant.
+Customer #159 enters.  There are 7 customers already here. TOO BUSY! I'm leaving!
+Customer #165 enters.  There are 7 customers already here. TOO BUSY! I'm leaving!
+Customer #166 enters.  There are 7 customers already here. TOO BUSY! I'm leaving!
+Customer #167 enters.  There are 7 customers already here. TOO BUSY! I'm leaving!
+Customer #160 leaves.  There are 6 customers now.
+Customer #168 enters.  There are 6 customers already here. I'll wait for a seat.
+Customer #163 seated. There are 7 customers in the restaurant.
+Customer #169 enters.  There are 7 customers already here. TOO BUSY! I'm leaving!
+Customer #161 leaves.  There are 6 customers now.
+Customer #164 seated. There are 6 customers in the restaurant.
+Customer #158 leaves.  There are 5 customers now.
+Customer #168 seated. There are 5 customers in the restaurant.
+Customer #170 enters.  There are 5 customers already here. I'll wait for a seat.
+Customer #171 enters.  There are 6 customers already here. I'll wait for a seat.
 
-**** It's now 3 am. ****  
+**** It's now 10 am. ****
 
-Customer #151 enters.  The place is empty.
-Customer #151 seated.
-@@ Server is back. @@
-Customer #151 leaves.  There are no customers left.
-@@ Server is on break. @@
-Customer #152 enters.  The place is empty.
-Customer #152 seated.
-@@ Server is back. @@
+Customer #172 enters.  There are 7 customers already here. TOO BUSY! I'm leaving!
+Customer #170 seated. There are 7 customers in the restaurant.
+Customer #173 enters.  There are 7 customers already here. TOO BUSY! I'm leaving!
+Customer #163 leaves.  There are 6 customers now.
+Customer #174 enters.  There are 6 customers already here. I'll wait for a seat.
+Customer #174 seated. There are 7 customers in the restaurant.
+Customer #156 leaves.  There are 6 customers now.
+Customer #162 leaves.  There are 5 customers now.
+Customer #171 seated. There are 5 customers in the restaurant.
+Customer #175 enters.  There are 5 customers already here. I'll wait for a seat.
+Customer #175 seated. There are 6 customers in the restaurant.
+Customer #164 leaves.  There are 5 customers now.
+Customer #176 enters.  There are 5 customers already here. I'll wait for a seat.
+Customer #168 leaves.  There are 5 customers now.
+Customer #176 seated. There are 5 customers in the restaurant.
+Customer #177 enters.  There are 5 customers already here. I'll wait for a seat.
+Customer #177 seated. There are 6 customers in the restaurant.
+Customer #171 leaves.  There are 5 customers now.
+Customer #178 enters.  There are 5 customers already here. I'll wait for a seat.
+Customer #170 leaves.  There are 5 customers now.
+Customer #178 seated. There are 5 customers in the restaurant.
+Customer #174 leaves.  There are 4 customers now.
+Customer #179 enters.  There are 4 customers already here.
+Customer #179 seated. There are 5 customers in the restaurant.
+Customer #180 enters.  There are 5 customers already here. I'll wait for a seat.
+Customer #176 leaves.  There are 5 customers now.
 
-**** It's now 4 am. ****  
+**** It's now 11 am. ****
 
-Customer #152 leaves.  There are no customers left.
-@@ Server is on break. @@
-
-**** It's now 5 am. ****  
-
-Customer #153 enters.  The place is empty.
-Customer #153 seated.
-@@ Server is back. @@
-
-**** It's now 6 am. ****  
-
-Customer #154 enters.  There is 1 customer already here.
-Customer #154 seated.
-Customer #153 leaves.  There is 1 customer now.
-Customer #155 enters.  There is 1 customer already here.
-Customer #155 seated.
-Customer #156 enters.  There 2 customers already here.
-Customer #156 seated.
-Customer #157 enters.  There 3 customers already here.
-Customer #154 leaves.  There are 3 customers now.
-Customer #157 seated.
-Customer #158 enters.  There 3 customers already here.
-Customer #158 seated.
-
-**** It's now 7 am. ****  
-
-Customer #155 leaves.  There are 3 customers now.
-Customer #159 enters.  There 3 customers already here.
-Customer #159 seated.
-Customer #156 leaves.  There are 3 customers now.
-Customer #157 leaves.  There are 2 customers now.
-Customer #160 enters.  There 2 customers already here.
-Customer #160 seated.
-Customer #158 leaves.  There are 2 customers now.
-Customer #161 enters.  There 2 customers already here.
-Customer #161 seated.
-
-**** It's now 8 am. ****  
-
-Customer #162 enters.  There 3 customers already here.
-Customer #162 seated.
-Customer #159 leaves.  There are 3 customers now.
-Customer #163 enters.  There 3 customers already here.
-Customer #164 enters.  There 4 customers already here.
-Customer #164 seated.
-Customer #160 leaves.  There are 4 customers now.
-Customer #163 seated.
-Customer #165 enters.  There 4 customers already here.
-Customer #165 seated.
-Customer #166 enters.  There 4 customers already here.
-Customer #161 leaves.  There are 5 customers now.
-Customer #166 seated.
-Customer #167 enters.  There 5 customers already here. I'll wait for a seat.
-Customer #168 enters.  There 6 customers already here. I'll wait for a seat.
-Customer #169 enters.  There 6 customers already here. I'll wait for a seat.
-Customer #165 leaves.  There are 7 customers now.
-Customer #167 seated.
-
-**** It's now 9 am. ****  
-
-Customer #162 leaves.  There are 6 customers now.
-Customer #168 seated.
-Customer #170 enters.  There 6 customers already here. I'll wait for a seat.
-Customer #171 enters.  There 6 customers already here. I'll wait for a seat.
-Customer #163 leaves.  There are 7 customers now.
-Customer #169 seated.
-Customer #172 enters.  There 6 customers already here. I'll wait for a seat.
-Customer #173 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #164 leaves.  There are 7 customers now.
-Customer #170 seated.
-Customer #174 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #175 enters.  There 6 customers already here. I'll wait for a seat.
-Customer #176 enters.  There 7 customers already here. I'll wait for a seat.
-Customer #177 enters.  There 6 customers already here. I'll wait for a seat.
-Customer #167 leaves.  There are 6 customers now.
-Customer #171 seated.
-Customer #178 enters.  There 5 customers already here. I'll wait for a seat.
-Customer #166 leaves.  There are 6 customers now.
-Customer #172 seated.
-Customer #179 enters.  There 6 customers already here. I'll wait for a seat.
-Customer #168 leaves.  There are 7 customers now.
-Customer #175 seated.
-Customer #180 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #181 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #176 seated.
-Customer #169 leaves.  There are 7 customers now.
-Customer #182 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #170 leaves.  There are 7 customers now.
-Customer #177 seated.
-Customer #183 enters.  There 7 customers already here. I'll wait for a seat.
-
-**** It's now 10 am. ****  
-
-Customer #184 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #185 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #186 enters.  There 5 customers already here. I'll wait for a seat.
-Customer #186 seated.
-Customer #172 leaves.  There are 5 customers now.
-Customer #178 seated.
-Customer #188 enters.  There 5 customers already here. I'll wait for a seat.
-Customer #189 enters.  There 6 customers already here. I'll wait for a seat.
-Customer #190 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
+Customer #175 leaves.  There are 4 customers now.
+Customer #180 seated. There are 4 customers in the restaurant.
+Customer #181 enters.  There are 4 customers already here.
+Customer #181 seated. There are 5 customers in the restaurant.
+Customer #182 enters.  There are 5 customers already here. I'll wait for a seat.
+Customer #183 enters.  There are 6 customers already here. I'll wait for a seat.
 Customer #177 leaves.  There are 6 customers now.
-Customer #179 seated.
-Customer #175 leaves.  There are 6 customers now.
-Customer #183 seated.
-Customer #171 leaves.  There are 6 customers now.
-Customer #191 enters.  There 6 customers already here. I'll wait for a seat.
-Customer #187 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #192 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #193 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #194 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #176 leaves.  There are 7 customers now.
-Customer #188 seated.
-Customer #195 enters.  There 5 customers already here. I'll wait for a seat.
-Customer #196 enters.  There 6 customers already here. I'll wait for a seat.
-Customer #197 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #198 enters.  There 6 customers already here. I'll wait for a seat.
-Customer #199 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
+Customer #182 seated. There are 6 customers in the restaurant.
+Customer #184 enters.  There are 6 customers already here. I'll wait for a seat.
+Customer #179 leaves.  There are 6 customers now.
+Customer #183 seated. There are 6 customers in the restaurant.
+Customer #178 leaves.  There are 5 customers now.
+Customer #184 seated. There are 5 customers in the restaurant.
+Customer #181 leaves.  There are 4 customers now.
+Customer #185 enters.  There are 4 customers already here.
+Customer #185 seated. There are 5 customers in the restaurant.
+Customer #186 enters.  There are 5 customers already here. I'll wait for a seat.
+Customer #180 leaves.  There are 5 customers now.
 
-**** It's now 11 am. ****  
+**** It's now noon. ****
 
-Customer #179 leaves.  There are 7 customers now.
-Customer #189 seated.
-Customer #186 leaves.  There are 7 customers now.
-Customer #191 seated.
-Customer #200 enters.  There 6 customers already here. I'll wait for a seat.
-Customer #178 leaves.  There are 7 customers now.
-Customer #195 seated.
-Customer #201 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #183 leaves.  There are 7 customers now.
-Customer #196 seated.
-Customer #202 enters.  There 6 customers already here. I'll wait for a seat.
-Customer #203 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #188 leaves.  There are 7 customers now.
-Customer #198 seated.
-Customer #204 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #189 leaves.  There are 6 customers now.
-Customer #200 seated.
-Customer #195 leaves.  There are 5 customers now.
-Customer #202 seated.
-Customer #205 enters.  There 5 customers already here. I'll wait for a seat.
+Customer #186 seated. There are 5 customers in the restaurant.
+Customer #184 leaves.  There are 4 customers now.
+Customer #187 enters.  There are 4 customers already here.
+Customer #187 seated. There are 5 customers in the restaurant.
+Customer #182 leaves.  There are 4 customers now.
+Customer #183 leaves.  There are 3 customers now.
+Customer #188 enters.  There are 3 customers already here.
+Customer #188 seated. There are 4 customers in the restaurant.
+Customer #187 leaves.  There are 3 customers now.
+Customer #189 enters.  There are 3 customers already here.
+Customer #186 leaves.  There are 3 customers now.
+Customer #189 seated. There are 3 customers in the restaurant.
+Customer #185 leaves.  There are 2 customers now.
+Customer #190 enters.  There are 2 customers already here.
+Customer #190 seated. There are 3 customers in the restaurant.
 
-**** It's now noon. ****  
+**** It's now 1 pm. ****
 
-Customer #191 leaves.  There are 5 customers now.
-Customer #205 seated.
-Customer #206 enters.  There 5 customers already here. I'll wait for a seat.
-Customer #207 enters.  There 6 customers already here. I'll wait for a seat.
-Customer #196 leaves.  There are 6 customers now.
-Customer #206 seated.
-Customer #208 enters.  There 6 customers already here. I'll wait for a seat.
-Customer #198 leaves.  There are 6 customers now.
-Customer #207 seated.
-Customer #209 enters.  There 5 customers already here.
-Customer #202 leaves.  There are 5 customers now.
-Customer #208 seated.
-Customer #200 leaves.  There are 4 customers now.
-Customer #209 seated.
-Customer #210 enters.  There 4 customers already here.
-Customer #205 leaves.  There are 5 customers now.
-Customer #210 seated.
-Customer #207 leaves.  There are 4 customers now.
-Customer #211 enters.  There 4 customers already here.
-Customer #211 seated.
-Customer #212 enters.  There 5 customers already here. I'll wait for a seat.
+Customer #191 enters.  There are 3 customers already here.
+Customer #191 seated. There are 4 customers in the restaurant.
+Customer #189 leaves.  There are 3 customers now.
+Customer #188 leaves.  There are 2 customers now.
+Customer #190 leaves.  There is 1 customer now.
+Customer #192 enters.  There is 1 customer already here.
+Customer #192 seated. There are 2 customers in the restaurant.
+Customer #191 leaves.  There is 1 customer now.
+Customer #192 leaves.  There are no customers left.
+@@ Server is on break. @@
+Customer #193 enters.  The place is empty.
+Customer #193 seated. There is 1 customer in the restaurant.
+@@ Server is back. @@
 
-**** It's now 1 pm. ****  
+**** It's now 2 pm. ****
 
-Customer #213 enters.  There 5 customers already here. I'll wait for a seat.
-Customer #208 leaves.  There are 6 customers now.
-Customer #212 seated.
-Customer #206 leaves.  There are 4 customers now.
-Customer #213 seated.
-Customer #211 leaves.  There are 3 customers now.
-Customer #214 enters.  There 3 customers already here.
-Customer #214 seated.
-Customer #215 enters.  There 3 customers already here.
-Customer #215 seated.
-Customer #210 leaves.  There are 4 customers now.
-Customer #209 leaves.  There are 3 customers now.
-Customer #212 leaves.  There are 3 customers now.
-Customer #216 enters.  There 3 customers already here.
-Customer #216 seated.
-Customer #217 enters.  There 4 customers already here.
-Customer #217 seated.
-Customer #218 enters.  There 5 customers already here. I'll wait for a seat.
-Customer #219 enters.  There 6 customers already here. I'll wait for a seat.
-Customer #215 leaves.  There are 6 customers now.
-Customer #218 seated.
+Customer #194 enters.  There is 1 customer already here.
+Customer #194 seated. There are 2 customers in the restaurant.
+Customer #193 leaves.  There is 1 customer now.
+Customer #194 leaves.  There are no customers left.
+@@ Server is on break. @@
+Customer #195 enters.  The place is empty.
+Customer #195 seated. There is 1 customer in the restaurant.
+@@ Server is back. @@
+Customer #196 enters.  There is 1 customer already here.
+Customer #196 seated. There are 2 customers in the restaurant.
+Customer #195 leaves.  There is 1 customer now.
 
-**** It's now 2 pm. ****  
+**** It's now 3 pm. ****
 
-Customer #213 leaves.  There are 5 customers now.
-Customer #219 seated.
-Customer #214 leaves.  There are 4 customers now.
-Customer #220 enters.  There 4 customers already here.
-Customer #220 seated.
-Customer #219 leaves.  There are 4 customers now.
-Customer #216 leaves.  There are 3 customers now.
-Customer #217 leaves.  There are 2 customers now.
-Customer #218 leaves.  There is 1 customer now.
-
-**** It's now 3 pm. ****  
-
-Customer #221 enters.  There is 1 customer already here.
-Customer #221 seated.
-Customer #220 leaves.  There is 1 customer now.
-Customer #222 enters.  There is 1 customer already here.
-Customer #222 seated.
-Customer #223 enters.  There 2 customers already here.
-Customer #223 seated.
-Customer #222 leaves.  There are 2 customers now.
-Customer #224 enters.  There 2 customers already here.
-Customer #221 leaves.  There are 2 customers now.
-Customer #224 seated.
-
-**** It's now 4 pm. ****  
-
-Customer #225 enters.  There 2 customers already here.
-Customer #225 seated.
-Customer #223 leaves.  There are 2 customers now.
-Customer #226 enters.  There 2 customers already here.
-Customer #226 seated.
-Customer #224 leaves.  There are 2 customers now.
-Customer #227 enters.  There 2 customers already here.
-Customer #227 seated.
-Customer #228 enters.  There 3 customers already here.
-Customer #228 seated.
-Customer #229 enters.  There 4 customers already here.
-Customer #229 seated.
-Customer #230 enters.  There 5 customers already here. I'll wait for a seat.
-Customer #226 leaves.  There are 5 customers now.
-Customer #230 seated.
-Customer #231 enters.  There 5 customers already here. I'll wait for a seat.
-Customer #227 leaves.  There are 5 customers now.
-Customer #231 seated.
-Customer #225 leaves.  There are 4 customers now.
-Customer #232 enters.  There 4 customers already here.
-Customer #233 enters.  There 5 customers already here.
-Customer #233 seated.
-Customer #228 leaves.  There are 4 customers now.
-Customer #230 leaves.  There are 3 customers now.
-
-**** It's now 5 pm. ****  
-
-Customer #232 seated.
-Customer #231 leaves.  There are 2 customers now.
-Customer #234 enters.  There 2 customers already here.
-Customer #234 seated.
-Customer #235 enters.  There 3 customers already here.
-Customer #236 enters.  There 4 customers already here.
-Customer #236 seated.
-Customer #238 enters.  There 5 customers already here.
-Customer #229 leaves.  There are 5 customers now.
-Customer #239 enters.  There 5 customers already here. I'll wait for a seat.
-Customer #235 seated.
-Customer #240 enters.  There 6 customers already here. I'll wait for a seat.
-Customer #237 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #241 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #233 leaves.  There are 7 customers now.
-Customer #242 enters.  There 7 customers already here. I'll wait for a seat.
-Customer #238 seated.
-Customer #243 enters.  There 7 customers already here. I'll wait for a seat.
-Customer #244 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #245 enters.  There 7 customers already here. I'll wait for a seat.
-Customer #246 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #247 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #248 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #249 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #235 leaves.  There are 7 customers now.
-Customer #239 seated.
-Customer #250 enters.  There 6 customers already here. I'll wait for a seat.
-Customer #251 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #252 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #253 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #234 leaves.  There are 7 customers now.
-Customer #240 seated.
-Customer #254 enters.  There 5 customers already here. I'll wait for a seat.
-Customer #255 enters.  There 6 customers already here. I'll wait for a seat.
-Customer #256 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #257 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #232 leaves.  There are 7 customers now.
-Customer #242 seated.
-Customer #258 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-
-**** It's now 6 pm. ****  
-
-Customer #259 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #260 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #261 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #262 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #236 leaves.  There are 7 customers now.
-Customer #243 seated.
-Customer #263 enters.  There 7 customers already here. I'll wait for a seat.
-Customer #264 enters.  There 6 customers already here. I'll wait for a seat.
-Customer #265 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #266 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #267 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #239 leaves.  There are 7 customers now.
-Customer #238 leaves.  There are 7 customers now.
-Customer #245 seated.
-Customer #250 seated.
-Customer #268 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #269 enters.  There 6 customers already here. I'll wait for a seat.
-Customer #270 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
-Customer #271 enters.  There 7 customers already here. TOO BUSY! I'm leaving!
+Customer #197 enters.  There is 1 customer already here.
+Customer #196 leaves.  There is 1 customer now.
+Customer #197 seated. There is 1 customer in the restaurant.
+Customer #198 enters.  There is 1 customer already here.
+Customer #198 seated. There are 2 customers in the restaurant.
+Customer #199 enters.  There are 2 customers already here.
+Customer #199 seated. There are 3 customers in the restaurant.
+Customer #197 leaves.  There are 2 customers now.
+Customer #199 leaves.  There is 1 customer now.
+Customer #198 leaves.  There are no customers left.
+@@ Server is on break. @@

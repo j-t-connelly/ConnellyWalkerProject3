@@ -8,7 +8,6 @@
 
 std::mutex lock;
 std::condition_variable waiting_room;
-std::condition_variable server_break;
 int timeCounter = 0;
 const double ranges[24] = { 5, 5, 7, 10, 8, 5, 3, 2, 1, .5, 1, 2, 2, 3, 4, 3, 1, .25, .5, 2, 3, 4, 4, 5 };
 int customerNumber = 1;
@@ -55,14 +54,14 @@ void timeCounterKeeper()
 void server()
 {
 	while (open) {
-		std::unique_lock<std::mutex> caseCheck(lock);
-		server_break.wait(caseCheck, []() {return count == 0; });
+		std::unique_lock<std::mutex> noCheck(lock);
+		waiting_room.wait(noCheck, []() {return count == 0; });
 		std::cout << "@@ Server is on break. @@" << std::endl;
-		caseCheck.unlock();
-		caseCheck.lock();
-		server_break.wait(caseCheck, []() {return count != 0; });
+		noCheck.unlock();
+		std::unique_lock<std::mutex> placeCheck(lock);
+		waiting_room.wait(placeCheck, []() {return count != 0; });
 		std::cout << "@@ Server is back. @@" << std::endl;
-		caseCheck.unlock();
+		placeCheck.unlock();
 	}
 }
 
@@ -91,7 +90,7 @@ void customer(int cus)
 		}
 		if (count >= 6) {
 			flag = true;
-			std::cout << "I'll  wait for a seat.";
+			std::cout << "I'll wait for a seat.";
 		}
 		count++;
 		std::cout << std::endl;
@@ -104,9 +103,9 @@ void customer(int cus)
 		lock.lock();
 		std::cout << "Customer #" << cus << " seated. There ";
 		if (count == 1)
-			std::cout << " is 1 customer in the restaurant.";
+			std::cout << "is 1 customer in the restaurant.";
 		else
-			std::cout << " are " << count << " customers in the restaurant.";
+			std::cout << "are " << count << " customers in the restaurant.";
 		std::cout << std::endl;
 		lock.unlock();
 		std::uniform_int_distribution<> unif(1, 5);
@@ -122,6 +121,7 @@ void customer(int cus)
 		std::cout << std::endl;
 		lock.unlock();
 	}
+	waiting_room.notify_all();
 }
 
 int main(int argc, char** argv)

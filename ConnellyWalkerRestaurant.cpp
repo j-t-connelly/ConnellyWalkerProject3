@@ -7,33 +7,29 @@
 #include <condition_variable>
 
 std::mutex lock;
-std::condition_variable cv;
+std::condition_variable waiting_room;
+std::condition_variable server_break;
 int timeCounter = 0;
 const double ranges[24] = { 5, 5, 7, 10, 8, 5, 3, 2, 1, .5, 1, 2, 2, 3, 4, 3, 1, .25, .5, 2, 3, 4, 4, 5 };
 int customerNumber = 1;
-const uint8_t WAITING_ROOM = 2;
-const uint8_t TABLES = 5; // Total number of tables
-uint8_t count = 0; // will keep track of how many customers are available, if more cutomers than TABLES + WAITING_ROOM, incoming customers leave
+bool open = true;
+const uint8_t CAPACITY = 7;
+int count = 0; // will keep track of how many customers are available, if more cutomers than CAPACITY, incoming customers leave
 
 
 
 void timeCounterKeeper()
 {
-	while (true) {
-		if (timeCounter == 0) {
+	while (open) {
+		if (timeCounter == 24 || timeCounter == 0) {
+			// Back to midnight
 			lock.lock();
-			std::cout << "**** It's now midnight.****\n" << std::endl;
-			lock.unlock();
-		}
-		std::this_thread::sleep_for(std::chrono::seconds(5));
-		timeCounter++;
-		if (timeCounter == 24) {
 			timeCounter = 0;
-			lock.lock();
 			std::cout << "\n**** It's now midnight. ****\n" << std::endl;
 			lock.unlock();
 		}
 		else if (timeCounter == 12) {
+			// high noon
 			lock.lock();
 			std::cout << "\n**** It's now noon. ****\n" << std::endl;
 			lock.unlock();
@@ -46,24 +42,101 @@ void timeCounterKeeper()
 			lock.unlock();
 		}
 		else {
+			// 1 - 11 AM
 			lock.lock();
 			std::cout << "\n**** It's now " << timeCounter << " am. ****\n" << std::endl;
 			lock.unlock();
 		}
+		timeCounter++;
+		std::this_thread::sleep_for(std::chrono::seconds(5));
 	}
 }
 
 void server()
 {
+	while (open) {
+		std::unique_lock<std::mutex> caseCheck(lock);
+		server_break.wait(caseCheck, []() {return count == 0; });
+		std::cout << "@@ Server is on break. @@" << std::endl;
+		caseCheck.unlock();
+		caseCheck.lock();
+		server_break.wait(caseCheck, []() {return count != 0; });
+		std::cout << "@@ Server is back. @@" << std::endl;
+		caseCheck.unlock();
+	}
 }
 
-void customer()
+void customer(int cus)
 {
+	if (count == 7) {
+		lock.lock();
+		std::cout << "Customer #" << cus << " enters.  ";
+		std::cout << "There are " << count << " customers already here. ";
+		std::cout << "TOO BUSY! I'm leaving!" << std::endl;
+		lock.unlock();
+	}
+	else {
+		bool flag = false;
+		lock.lock();
+		//unfortunately due to all of the prints this has to be locked down like this
+		std::cout << "Customer #" << cus << " enters.  ";
+		if (count == 0) {
+			std::cout << "The place is empty";
+		}
+		else if (count == 1) {
+			std::cout << "There is 1 customer already here.";
+		}
+		else {
+			std::cout << "There are " << count << " customers already here.";
+		}
+		if (count >= 6) {
+			flag = true;
+			std::cout << "I'll  wait for a seat.";
+		}
+		count++;
+		std::cout << std::endl;
+		lock.unlock();
+		if (flag) {
+			std::unique_lock<std::mutex> caseCheck(lock);
+			waiting_room.wait(caseCheck, []() {return count <= 5; });
+			caseCheck.unlock();
+		}
+		lock.lock();
+		std::cout << "Customer #" << cus << " seated. There ";
+		if (count == 1)
+			std::cout << " is 1 customer in the restaurant.";
+		else
+			std::cout << " are " << count << " customers in the restaurant.";
+		std::cout << std::endl;
+		lock.unlock();
+		std::uniform_int_distribution<> unif(1, 5);
+		std::default_random_engine re;
+		std::this_thread::sleep_for(std::chrono::seconds(unif(re)));
+		lock.lock();
+		count--;
+		std::cout << "Customer #" << cus << " leaves.  There";
+		if (count == 1)
+			std::cout << " is 1 customer now.";
+		else
+			std::cout << " are " << count << " customers now.";
+		std::cout << std::endl;
+		lock.unlock();
+	}
 }
 
 int main(int argc, char** argv)
 {
 	std::thread timer(timeCounterKeeper);
-	//std::thread server(server);
+	std::thread serverWorker(server);
+	std::vector<std::thread> customerThreads; // To store threads, otherwise bad things happen when one goes rogue
+	while (open) {
+		double upper_bound = ranges[timeCounter];
+		double sleepDuration = (double)(std::rand()) / ((double)(RAND_MAX/upper_bound)); // unif is a random number from 0 to ranges[timeCounter] chosen at random
+		std::this_thread::sleep_for(std::chrono::duration<double>(sleepDuration)); // Sleep for this long before a customer enters
+		customerThreads.push_back(std::thread(customer, customerNumber));
+		customerNumber++;
+	}
 	timer.join();
+	serverWorker.join();
+	
 }

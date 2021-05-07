@@ -1,3 +1,11 @@
+/*
+James Connelly & Billy Walker
+Doctor Heinold
+CMSCI 356
+Project 3
+Problem 2
+*/
+
 #include <thread>
 #include <chrono> //sleeping
 #include <iostream>
